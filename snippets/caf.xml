@@ -25,7 +25,6 @@
   <project name="platform/external/tinycompress" path="external/tinycompress" remote="caf_system" />
   <!-- CAF Vendor -->
   <project name="platform/system/qcom" path="vendor/qcom/opensource/softap" remote="caf_vendor" />
-  <project name="platform/vendor/nxp/opensource/hidlimpl" path="vendor/nxp/opensource/hidlimpl" remote="caf_vendor" />
   <project name="platform/vendor/qcom-opensource/dpm" path="vendor/qcom/opensource/dpm" remote="caf_vendor" />
   <project name="platform/vendor/qcom-opensource/fst-manager" path="vendor/qcom/opensource/fst-manager" remote="caf_vendor" />
   <project name="platform/vendor/qcom-opensource/healthd-ext" path="vendor/qcom/opensource/healthd-ext" remote="caf_vendor" />
