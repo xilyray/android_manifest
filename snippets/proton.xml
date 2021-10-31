@@ -7,6 +7,8 @@
   <remote name="gitlab-ssh" fetch="ssh://git@gitlab.com" />
   <remote name="proton" fetch="https://github.com/ProtonAOSP" revision="sc" />
   <remote name="proton-ssh" fetch="ssh://git@github.com/ProtonAOSP" revision="sc" />
+  <remote name="proton-lavender" fetch="ssh://git@github.com/ProtonAOSP-lavender" revision="sc" />
+  <remote name="proton-lavender-ssh" fetch="ssh://git@github.com/ProtonAOSP-lavender" revision="sc" />
   <remote name="blobs" fetch="https://github.com/NeutronBlobs" revision="sc" />
   <remote name="blobs-ssh" fetch="ssh://git@github.com/NeutronBlobs" revision="sc" />
 
@@ -135,4 +137,15 @@
   <project name="android_vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="proton" groups="proton" />
   <project name="android_external_libncurses" path="external/libncurses" remote="proton" groups="proton" />
   <project name="android_manifest" path="manifest" remote="proton" groups="proton" />
+
+  <!-- Track modified repositories -->
+  <project name="android_vendor_qcom_opensource_thermal" path="vendor/qcom/opensource/thermal-hal" remote="proton-lavender-ssh" revision="sc" />
+  <project name="android_kernel_build" path="device/qcom/kernelscripts" remote="proton-lavender-ssh" revision="sc" >
+    <linkfile dest="vendor/qcom/build/tasks/kernel_definitions.mk" src="kernel_definitions.mk"/>
+  </project>
+  <remove-project name="android_vendor_qcom_opensource_interfaces" />
+  <project name="android_vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="proton-lavender-ssh" revision="sc" />
+  <project name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" remote="proton-lavender-ssh" revision="sc" />
+  <project name="android_vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices" remote="proton-lavender-ssh" revision="sc" />
+  <project name="android_vendor_codeaurora_telephony" path="vendor/codeaurora/commonsys/telephony" remote="proton-lavender-ssh" revision="sc" />
 </manifest>
