@@ -149,6 +149,7 @@
   <project name="android_manifest" path="manifest" remote="proton" groups="proton" />
   <project name="android_external_exfatprogs" path="external/exfatprogs" remote="proton-lavender-ssh" groups="proton" />
   <project name="android_external_tinyxml" path="external/tinyxml" remote="proton-lavender-ssh" groups="proton" />
+  <project name="android_vendor_support" path="vendor/support" remote="proton-lavender-ssh" groups="proton" />
 
   <!-- Track modified repositories -->
   <project name="android_vendor_qcom_opensource_thermal" path="vendor/qcom/opensource/thermal-hal" remote="proton-lavender-ssh" revision="sc" />
