@@ -17,11 +17,11 @@
 
   <!-- Replace existing repositories -->
   <remove-project name="platform/frameworks/base" />
-  <project name="android_frameworks_base" path="frameworks/base" remote="proton" groups="proton" />
+  <project name="android_frameworks_base" path="frameworks/base" remote="proton-lavender-ssh" groups="proton" />
   <remove-project name="platform/libcore" />
   <project name="android_libcore" path="libcore" remote="proton" groups="proton" />
   <remove-project name="platform/build" />
-  <project name="android_build_make" path="build/make" remote="proton" groups="proton">
+  <project name="android_build_make" path="build/make" remote="proton-lavender-ssh" groups="proton">
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -31,7 +31,7 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
   <remove-project name="platform/build/soong" />
-  <project name="android_build_soong" path="build/soong" remote="proton" groups="proton">
+  <project name="android_build_soong" path="build/soong" remote="proton-lavender-ssh" groups="proton">
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
@@ -40,9 +40,9 @@
   <remove-project name="platform/art" />
   <project name="android_art" path="art" remote="proton" groups="proton" />
   <remove-project name="platform/system/core" />
-  <project name="android_system_core" path="system/core" remote="proton" groups="proton" />
+  <project name="android_system_core" path="system/core" remote="proton-lavender-ssh" groups="proton" />
   <remove-project name="platform/system/sepolicy" />
-  <project name="android_system_sepolicy" path="system/sepolicy" remote="proton" groups="proton" />
+  <project name="android_system_sepolicy" path="system/sepolicy" remote="proton-lavender-ssh" groups="proton" />
   <remove-project name="platform/external/noto-fonts" />
   <project name="android_external_noto-fonts" path="external/noto-fonts" remote="proton" groups="proton" />
   <remove-project name="platform/external/roboto-fonts" />
@@ -54,7 +54,7 @@
   <remove-project name="platform/packages/modules/Connectivity" />
   <project name="android_packages_modules_Connectivity" path="packages/modules/Connectivity" remote="proton" groups="proton" />
   <remove-project name="platform/bionic" />
-  <project name="android_bionic" path="bionic" remote="proton" groups="proton" />
+  <project name="android_bionic" path="bionic" remote="proton-lavender-ssh" groups="proton" />
   <remove-project name="platform/packages/apps/WallpaperPicker2" />
   <project name="android_packages_apps_WallpaperPicker2" path="packages/apps/WallpaperPicker2" remote="proton" groups="proton" />
   <remove-project name="platform/packages/apps/Launcher3" />
@@ -62,9 +62,11 @@
   <remove-project name="platform/packages/apps/SettingsIntelligence" />
   <project name="android_packages_apps_SettingsIntelligence" path="packages/apps/SettingsIntelligence" remote="proton" groups="proton" />
   <remove-project name="platform/packages/apps/Settings" />
-  <project name="android_packages_apps_Settings" path="packages/apps/Settings" remote="proton" groups="proton" />
+  <project name="android_packages_apps_Settings" path="packages/apps/Settings" remote="proton-lavender-ssh" groups="proton" />
+  <remove-project name="platform/frameworks/av" />
+  <project name="android_frameworks_av" path="frameworks/av" remote="proton-lavender-ssh" groups="proton" />
   <remove-project name="platform/frameworks/native" />
-  <project name="android_frameworks_native" path="frameworks/native" remote="proton" groups="proton" />
+  <project name="android_frameworks_native" path="frameworks/native" remote="proton-lavender-ssh" groups="proton" />
   <remove-project name="platform/external/jemalloc_new" />
   <project name="android_external_jemalloc_new" path="external/jemalloc_new" remote="proton" groups="proton" />
   <remove-project name="platform/packages/modules/Permission" />
@@ -97,6 +99,10 @@
   <project name="android_device_google_redbull-sepolicy" path="device/google/redbull-sepolicy" remote="proton" groups="proton" />
   <remove-project name="device/google/bramble" />
   <project name="android_device_google_bramble" path="device/google/bramble" remote="proton" groups="proton" />
+  <remove-project name="platform/hardware/google/pixel" />
+  <project name="android_hardware_google_pixel" path="hardware/google/pixel" remote="proton-lavender-ssh" groups="proton" />
+  <remove-project name="platform/hardware/libhardware" />
+  <project name="android_hardware_libhardware" path="hardware/libhardware" remote="proton-lavender-ssh" groups="proton" />
   <remove-project name="platform/hardware/qcom/sm8150/display" />
   <project name="android_hardware_qcom_sm8150_display" path="hardware/qcom/sm8150/display" remote="proton" groups="proton" />
   <remove-project name="platform/hardware/qcom/sm8150/data/ipacfg-mgr" />
@@ -111,7 +117,7 @@
   <project name="android_system_memory_lmkd" path="system/memory/lmkd" remote="proton" groups="proton" />
 
   <!-- Add new repositories -->
-  <project name="android_vendor_proton" path="vendor/proton" remote="proton" groups="proton" />
+  <project name="android_vendor_proton" path="vendor/proton" remote="proton-lavender-ssh" groups="proton" />
   <project name="android_packages_apps_ProtonWallpaperStub" path="packages/apps/ProtonWallpaperStub" remote="proton" groups="proton" />
   <project name="android_packages_apps_SimpleDeviceConfig" path="packages/apps/SimpleDeviceConfig" remote="proton" groups="proton" />
   <project name="android_packages_apps_Jelly" path="packages/apps/Jelly" remote="proton" groups="proton" />
