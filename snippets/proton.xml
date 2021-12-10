@@ -7,8 +7,8 @@
   <remote name="gitlab-ssh" fetch="ssh://git@gitlab.com" />
   <remote name="proton" fetch="https://github.com/ProtonAOSP" revision="sc" />
   <remote name="proton-ssh" fetch="ssh://git@github.com/ProtonAOSP" revision="sc" />
-  <remote name="proton-lavender" fetch="ssh://git@github.com/ProtonAOSP-lavender" revision="sc" />
-  <remote name="proton-lavender-ssh" fetch="ssh://git@github.com/ProtonAOSP-lavender" revision="sc" />
+  <remote name="proton-lavender" fetch="https://github.com/ProtonAOSP-lavender" revision="sc" />
+  <remote name="proton-lavender-ssh" fetch="https://github.com/ProtonAOSP-lavender" revision="sc" />
   <remote name="blobs" fetch="https://github.com/NeutronBlobs" revision="sc" />
   <remote name="blobs-ssh" fetch="ssh://git@github.com/NeutronBlobs" revision="sc" />
 
